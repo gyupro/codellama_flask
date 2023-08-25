@@ -8,13 +8,20 @@ Setup & Installation
 
 1. git clone https://github.com/facebookresearch/codellama
 2. pip install flask
-3. python app.py
+3. torchrun --nproc_per_node 1 app.py     --ckpt_dir ckpt_dir     --tokenizer_path tokenizer_path     --max_seq_len 128 --max_batch_size 4
+Run example  
+```bash
+torchrun --nproc_per_node 1 app.py     --ckpt_dir CodeLlama-7b/     --tokenizer_path CodeLlama-7b/tokenizer.model     --max_seq_len 128 --max_batch_size 4
+```
 
-Curl example
+
+# Request example
+
+## Curl example
 ```bash
 curl -X POST http://localhost:5000/complete -H "Content-Type: application/json" -d '{"prompts": ["import socket\n\ndef ping_exponential_backoff(host: str):", "import argparse\n\ndef main(string: str):"]}'
 ```
-Python example
+## Python example
 ```python
 import requests
 
