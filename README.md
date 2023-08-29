@@ -39,6 +39,7 @@ response = requests.post(url, json=data)
 print(response.json())
 ```
 
+### [Jupyter noebook example](https://github.com/gyupro/codellama_flask/blob/main/test_request.ipynb)
 
 ![image](https://github.com/gyupro/codellama_flask/assets/79894531/89521d10-3e15-4e90-b437-0c9b547ada6d)
 
