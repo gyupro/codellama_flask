@@ -6,7 +6,7 @@ This repository provides a simple Flask server for hosting [codellama](https://g
 
 ## Setup & Installation
 
-1. git clone https://github.com/facebookresearch/codellama
+1. git clone [https://github.com/gyupro/codellama_flask](https://github.com/gyupro/codellama_flask)
 2. download weights as described [HERE](https://github.com/gyupro/codellama_flask#download)
 3. pip install flask
 4. torchrun --nproc_per_node 1 app.py     --ckpt_dir ckpt_dir     --tokenizer_path tokenizer_path     --max_seq_len 128 --max_batch_size 4
