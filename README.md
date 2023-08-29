@@ -3,6 +3,11 @@ RESTful API flask server
 
 This repository provides a simple Flask server for hosting [codellama](https://github.com/facebookresearch/codellama).
 
+## Warning
+
+This code only works for 7B for now.
+
+I need to look into models bigger than 7B, please be aware that this does not work for a model bigger than 7B
 
 ## Setup & Installation
 
